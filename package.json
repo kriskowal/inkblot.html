@@ -6,6 +6,7 @@
     "system": "^1.0.4"
   },
   "translators": {
-    "html": "gutentag/translate-html"
+    "html": "gutentag/translate-html",
+    "json": "./translate-json"
   }
 }
