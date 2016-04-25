@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "blick": "^1.1.0",
+    "gutentag": "^2.1.1",
+    "inkblot": "^1.0.2",
+    "system": "^1.0.4"
+  },
+  "translators": {
+    "html": "gutentag/translate-html"
+  }
+}

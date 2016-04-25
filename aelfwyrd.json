@@ -1,0 +1,108 @@
+{
+    "start": {
+        "type": "text",
+        "text": "The strangers of Ælfwyrd have all come by their own way, some seeking, some fleeing, all destinèd east. You find yourself at the city center, beside a dry fountain.",
+        "next": "center"
+    },
+    "center": {
+        "type": "break",
+        "next": "center.1"
+    },
+    "center.1": {
+        "type": "text",
+        "text": "An elder of the town greets you. “Well met, traveller. I am in the employ of the town council, to hasten your way east.”",
+        "next": "return-from-elder"
+    },
+    "return-from-elder": {
+        "type": "option",
+        "label": "Address the elder.",
+        "keywords": [],
+        "branch": "return-from-elder.0.1",
+        "next": "return-from-elder.1"
+    },
+    "return-from-elder.0.1": {
+        "type": "text",
+        "text": "You greet the elder.",
+        "next": "return-from-elder.0.2"
+    },
+    "return-from-elder.0.2": {
+        "type": "goto",
+        "label": "elder"
+    },
+    "return-from-elder.1": {
+        "type": "option",
+        "label": "Go north.",
+        "keywords": [],
+        "branch": "return-from-elder.1.1",
+        "next": "return-from-elder.2"
+    },
+    "return-from-elder.1.1": {
+        "type": "text",
+        "text": "You enter the northern market.",
+        "next": "return-from-elder.1.2"
+    },
+    "return-from-elder.1.2": {
+        "type": "goto",
+        "label": "north"
+    },
+    "return-from-elder.2": {
+        "type": "prompt"
+    },
+    "north": {
+        "type": "text",
+        "text": "There are stalls with all manner of wares.",
+        "next": "north.1"
+    },
+    "north.1": {
+        "type": "option",
+        "label": "Return to the town center, southward.",
+        "keywords": [],
+        "branch": "north.1.1",
+        "next": "north.2"
+    },
+    "north.1.1": {
+        "type": "text",
+        "text": "You return to the town center, southward.",
+        "next": "north.1.2"
+    },
+    "north.1.2": {
+        "type": "goto",
+        "label": "center"
+    },
+    "north.2": {
+        "type": "prompt"
+    },
+    "elder": {
+        "type": "text",
+        "text": "How may I assist you?",
+        "next": "elder.1"
+    },
+    "elder.1": {
+        "type": "option",
+        "label": " “No, but thank you for your kind offer.”",
+        "keywords": [],
+        "branch": "elder.1.1",
+        "next": "elder.2"
+    },
+    "elder.1.1": {
+        "type": "text",
+        "text": "You tell the elder, “No, but thank you for your kind offer.”",
+        "next": "elder.1.2"
+    },
+    "elder.1.2": {
+        "type": "break",
+        "next": "elder.1.3"
+    },
+    "elder.1.3": {
+        "type": "text",
+        "text": "You stand before the fountain in the center of Æelfwyrd.",
+        "next": "elder.1.4"
+    },
+    "elder.1.4": {
+        "type": "goto",
+        "label": "return-from-elder"
+    },
+    "elder.2": {
+        "type": "prompt"
+    }
+}
